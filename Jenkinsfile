@@ -80,7 +80,7 @@ pipeline
 		
 			environment 
 			{ 
-				ANYPOINT_CREDENTIALS = credentials('anypointPlatforms')
+				ANYPOINT_CREDENTIALS = credentials('anypoint.platform')
 				ENV_CREDENTIALS = credentials("${platform_credentials}")
 			}
 		
