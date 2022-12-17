@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.mycompany</groupId>
-	<artifactId>dart-cicd-demo-api</artifactId>
+	<artifactId>multi-cicd-demo-api</artifactId>
 	<version>1.0.0</version>
 	<packaging>mule-application</packaging>
 
@@ -32,9 +32,12 @@
 					<cloudHubDeployment>
 						<uri>${anypoint.uri}</uri>
 						<muleVersion>${mule.version}</muleVersion>
-						<connectedAppClientId>${cloudhub.user}</connectedAppClientId>
+						<!--<connectedAppClientId>${cloudhub.user}</connectedAppClientId>
 						<connectedAppClientSecret>${cloudhub.password}</connectedAppClientSecret>
 						<connectedAppGrantType>client_credentials</connectedAppGrantType>
+						-->
+						 <username>${cloudhub.user}</username>
+      						<password>${cloudhub.password}</password>
 						<applicationName>${project.artifactId}${env.suffix}</applicationName>
 						<environment>${env.name}</environment>
 						<workerType>${cloudhub.workerType}</workerType>
