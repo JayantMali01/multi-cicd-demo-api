@@ -23,7 +23,7 @@ pipeline
 					{
             					case 'dev':
 							mule_env = 'dev'
-							cloudhub_env = 'DEV'
+							cloudhub_env = 'dev'
 							env_suffix = '-dev'
 							platform_credentials = 'Cloudhub_Dev'
 							break
