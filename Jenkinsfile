@@ -22,7 +22,7 @@ pipeline
 					}
           				switch(BRANCH) 
 					{
-            			case 'develop':
+            					case 'dev':
 							mule_env = 'dev'
 							cloudhub_env = 'DEV'
 							env_suffix = '-dev'
