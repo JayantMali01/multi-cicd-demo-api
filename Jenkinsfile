@@ -29,13 +29,13 @@ pipeline
 							break
 						case 'qa':
 							mule_env = 'qa'
-							cloudhub_env = 'DEV'
+							cloudhub_env = 'qa'
 							env_suffix = '-qa'
 							platform_credentials = 'Cloudhub_qa'
 							break
 						case 'prod':
 							mule_env = 'prod'
-							cloudhub_env = 'DEV'
+							cloudhub_env = 'prod'
 							env_suffix = '-prod'
 							platform_credentials = 'Cloudhub_Prod'
 							break
