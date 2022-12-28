@@ -35,7 +35,7 @@ pipeline
 							break
 						case 'prod':
 							mule_env = 'prod'
-							cloudhub_env = 'DEV'
+							cloudhub_env = 'prod'
 							env_suffix = '-prod'
 							platform_credentials = 'Cloudhub_Prod'
 							break
